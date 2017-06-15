@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		const fs = require('fs');
+
+		// fs.readFile('./index.html',(err,data))=>{
+		// 	if (err) {
+		// 		console.log('err',err)
+		// 		return false
+		// 	}
+		// 	console.log(data.toString())
+		// }
+
+		fs.stat('./index.html',function(err,stat){
+			if (stat && stat.isFile()) {
+				fs.open('./index.html','r',(err,fd) =>{
+					//创建一个与文件大小相同的缓冲区
+					var readB = new Buffer(stat,size);
+					var offset = 0;
+					var len = stat.size;
+					var fil =0;
+					fs.read(fd,readB,offset,len,fil,(err,readByte,readResult) =>{
+						console.log(readResult.toString())
+					})
+				})
+			}
+		})
+	</script>
+</body>
+</html>
