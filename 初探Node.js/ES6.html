@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<!-- <script type="text/javascript">
+		class Polygon{
+			aa(height,width){
+				this.height=height;
+				this.width=width;
+				//alert(this.height+'/'+this.width)
+			}
+			bb(){
+				console.log(`高度是 ${this.height}宽度是 ${this.width}`)
+			}
+		}
+
+		let pol = new Polygon();
+		pol.aa(11,22)
+		pol.bb();
+
+		class Rect extends Polygon{
+			getA(){
+				console.log(`这个矩形的面积是${this.height*this.width}`)
+			}
+		}
+		let get = new Rect();
+		get.aa(15,20)
+		get.getA();
+	</script> -->
+
+
+
+	<script type="text/javascript">
+		class Text{
+			aa (k,g){
+				this.k=k;
+				this.g=g;
+			}
+			bb (){
+				console.log(`他得宽是${this.k}他的高是${this.g}`)
+			}
+		}
+		let pol = new Text();
+		pol.aa(1,2);
+		pol.bb();
+
+		class Ree extends Text{
+			bb (){
+				super.bb ();
+				console.log(`他得宽是${this.k}他的高是${this.g}`)
+			}
+			cc (){
+				console.log(`面积是${this.k*this.g}`)
+			}
+		}
+		let gett = new Ree();
+		gett.aa(11,22);
+		gett.bb()
+		gett.cc();
+	</script>
+</body>
+</html>
