@@ -1,0 +1,11 @@
+{
+      "applinks": {
+          "apps": [],
+          "details": [
+              {
+                  "appID": "2E3UFUJVY8.com.bibidao.www",
+                  "paths": [ "/wwdc/news/", "/videos/wwdc/2015/*" ]
+              },
+          ]
+      }
+  }
